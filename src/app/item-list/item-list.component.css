@@ -1,0 +1,48 @@
+.container{
+    background-color: rgb(107, 106, 105);
+    padding: 2rem;
+    width: 50%;
+    }
+    .add-item{
+        padding-top: 1rem;
+        background-color: aliceblue;
+    }
+    .list-item{
+        padding-top: 1rem;
+        background-color: aliceblue;
+    }
+    .add-item button{
+        width: 3rem;
+        padding: 1rem;
+    }
+    .add-item input{
+        padding: 1rem;
+    }
+    .task{
+        background-color: rgb(57, 121, 121);
+    }
+    .message {
+        margin-bottom: 1rem;
+    }
+    .message p{
+        background-color: rgb(67, 89, 199);
+        color: rgb(249, 249, 250);
+        padding: 1rem;
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .deleteMsg{
+        margin-bottom: 1rem;  
+    }
+    .deleteMsg p{
+        /* background-color: rgb(211, 137, 150); */
+        color: red;
+        padding: 1rem;
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+    }

@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <!-- <h2 class="text-center">Add New Item</h2> -->
+    <div class="row add-item">
+        <div class="col-10">
+            <div class="mb-3">
+                <input [(ngModel)]="newItem" required class="form-control" placeholder="Enter new item">
+            </div>
+            <div class="message">
+                <p *ngIf="message">New item added</p>
+            </div>
+
+            <!-- {{newItem}} -->
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" type="submit" (click)="addTask()">+</button>
+        </div>
+    </div>
+    <div class="row list-item mt-5">
+        <h2 class="pb-4">Item List</h2>
+        <div class="col-8">
+            <ul>
+                <div class="deleteMsg">
+                    <p *ngIf="dltMsg">Item deleted</p>
+                </div>
+                <li *ngFor="let task of tasks; let i = index">
+                    <div class="row">
+                        <div class="col-11 mb-3">
+                            {{ task }}
+                        </div>
+                        <div class="col-1 mb-3">
+                            <button (click)="removeTask(i)" class="btn btn-danger">X</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
